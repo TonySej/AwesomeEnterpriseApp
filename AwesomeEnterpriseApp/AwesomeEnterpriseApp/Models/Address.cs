@@ -10,17 +10,17 @@ namespace AwesomeEnterpriseApp.Models
     public class Address
     {
         [Column(IsPrimaryKey = true, Storage = "idAddress")]
-        int idAddress { get; set; }
+        public int idAddress { get; set; }
         [Column(Name = "houseNumber")]
-        String houseNumber { get; set; }
+        public String houseNumber { get; set; }
         [Column(Name = "streetAddress1")]
-        String streetAddress1 { get; set; }
+        public String streetAddress1 { get; set; }
         [Column(Name = "streetAddress2")]
-        String streetAddress2 { get; set; }
+        public String streetAddress2 { get; set; }
         [Column(Name = "zipCode")]
-        String zipCode { get; set; }
+        public String zipCode { get; set; }
         [Column(Name = "city")]
-        String city { get; set; }
+        public String city { get; set; }
 
         public Address(String houseNumber, String street1, String street2, String zipCode, String city)
         {

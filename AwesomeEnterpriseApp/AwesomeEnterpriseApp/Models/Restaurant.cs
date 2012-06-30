@@ -10,31 +10,21 @@ namespace AwesomeEnterpriseApp.Models
     public class Restaurant
     {
         [Column(IsPrimaryKey = true, Storage = "idRestaurant")]
-        int idRestaurant { get; set; }
+        public int idRestaurant { get; set; }
         [Column(Name="name")]
-        String name { get; set; }
+        public String name { get; set; }
         [Column(Name = "cuisine")]
-        int cuisine { get; set; }
+        public int cuisine { get; set; }
         [Column(Name = "fanciness")]
-        int fanciness { get; set; }
+        public int fanciness { get; set; }
         [Column(Name = "websiteUrl")]
-        String websiteUrl { get; set; }
+        public String websiteUrl { get; set; }
         [Column(Name = "address")]
-        Address address { get; set; }
+        public Address address { get; set; }
         [Column(Name = "xCoord")]
-        String xCoord { get; set; }
+        public String xCoord { get; set; }
         [Column(Name = "yCoord")]
-        String yCoord { get; set; }
-
-        public int ID
-        {
-            get { return idRestaurant; }
-        }
-
-        public void setID(int idRestaurant)
-        {
-           this.idRestaurant = idRestaurant; 
-        }
+        public String yCoord { get; set; }
 
         public Restaurant(String name, int cuisine, int fanciness, String websiteUrl, Address address, String xCoord, String yCoord)
         {
